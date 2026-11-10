@@ -5,10 +5,13 @@
     "pnpm": ">=10"
   },
   "scripts": {
+    "bootstrap": "bash setup.sh",
     "dev": "concurrently -n supabase,next -c cyan,magenta \"pnpm dev:supabase\" \"pnpm dev:next\"",
     "dev:next": "next dev",
     "dev:supabase": "supabase start",
     "setup:env": "bash scripts/setup-env.sh",
+    "db:seed": "node scripts/generate-seed.mjs && supabase db reset --local",
+    "stop": "supabase stop",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",

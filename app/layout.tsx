@@ -4,8 +4,8 @@ import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Medallo.dev",
-  description: "Medallo.dev take-home",
+  title: "Coffee & Health Explorer",
+  description: "Medallo.dev QA take-home",
 };
 
 const geistSans = Geist({
