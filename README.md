@@ -90,9 +90,8 @@ Every important element has a `data-testid` attribute (for example `search-input
    - **Filtering:** each filter on its own, numeric ranges and their boundaries, validation messages, combining filters with search, reset.
    - **Pagination:** moving between pages, page size, the summary and page indicator, the first and last pages, page reset after a filter change.
    - **URL state:** reloading and deep-linking.
-3. **Make the tests reliable.** They should pass (or fail) the same way every run. Avoid fixed sleeps; wait on application state instead.
-4. **Make them easy to run.** Add a script such as `pnpm test:e2e` and document it.
-5. **Report defects.** If you find behaviour that doesn't match the table in section 4, write a bug report for each one and keep the test that exposes it. The test should fail, or be clearly marked as a known failure that points to the bug report.
+3. **Make them easy to run.** Add a script such as `pnpm test:e2e` and document it.
+4. **Report defects.** If you find behaviour that doesn't match the table in section 4, write a bug report for each one and keep the test that exposes it. The test should fail, or be clearly marked as a known failure that points to the bug report.
 
 Feel free to also test things through the API (`GET /api/records`) or the database if it helps, but the core of the submission is browser E2E tests.
 
@@ -200,9 +199,8 @@ Cada elemento importante tiene un atributo `data-testid` (por ejemplo `search-in
    - **Filtros:** cada filtro por separado, rangos numéricos y sus límites, mensajes de validación, combinación de filtros con búsqueda, reinicio.
    - **Paginación:** navegar entre páginas, tamaño de página, el resumen y el indicador de página, la primera y la última página, reinicio de página después de cambiar un filtro.
    - **Estado en la URL:** recargar y enlaces directos.
-3. **Haz que las pruebas sean confiables.** Deben pasar (o fallar) de la misma forma en cada ejecución. Evita esperas fijas (sleeps); espera el estado de la aplicación.
-4. **Haz que sean fáciles de ejecutar.** Agrega un script como `pnpm test:e2e` y documéntalo.
-5. **Reporta defectos.** Si encuentras un comportamiento que no coincide con la tabla de la sección 4, escribe un reporte de bug para cada uno y conserva la prueba que lo expone. La prueba debe fallar, o estar marcada claramente como un fallo conocido que haga referencia al reporte de bug.
+3. **Haz que sean fáciles de ejecutar.** Agrega un script como `pnpm test:e2e` y documéntalo.
+4. **Reporta defectos.** Si encuentras un comportamiento que no coincide con la tabla de la sección 4, escribe un reporte de bug para cada uno y conserva la prueba que lo expone. La prueba debe fallar, o estar marcada claramente como un fallo conocido que haga referencia al reporte de bug.
 
 Si te ayuda, también puedes probar cosas a través de la API (`GET /api/records`) o de la base de datos, pero lo principal de la entrega son las pruebas E2E en el navegador.
 
